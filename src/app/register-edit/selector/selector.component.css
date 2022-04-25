@@ -1,0 +1,49 @@
+/* SELECTOR WINDOW */
+.register-form-selector {
+  display: flex;
+  /* justify-content: space-around; */
+  justify-self: stretch;
+  flex-direction: column;
+  max-height: 250px;
+  min-height: 250px;
+  border: 1px solid #3ddbe4;
+  width: 91%;
+  margin: 10px auto;
+  overflow: auto;
+  border-radius: 4px;
+}
+
+.register-form-selector > a {
+  padding-top: 5px;
+  text-decoration: none;
+  color: #40a5aa;
+  font-size: 20px;
+  width: auto;
+  margin: auto;
+}
+.register-form-selector > a:last-child {
+  padding-bottom: 5px;
+}
+
+.register-form-selector > a:hover {
+  color: #8be3f0;
+}
+
+.register-form-back {
+  position: absolute;
+  top: 145px;
+  left: 40px;
+}
+
+.register-form-back > a {
+  text-decoration: none;
+  color: #ca2f00;
+}
+
+.register-form-back > a:hover {
+  color: #ff0000;
+}
+
+.no-item {
+  padding-top: 100px;
+}

@@ -1,1 +1,98 @@
 /* You can add global styles to this file, and also import other style files */
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+
+  /* height: 500px; */
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* position: relative; */
+  background-image: linear-gradient(to right top, #e9aace, #d29fcb, #ba96c6, #a08dc0, #8584b8, #7388bd, #5e8cbf, #458fbf, #25a0c8, #00b0cc, #00bfca, #28cdc2);
+}
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #d6c1c1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #00bfca;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(66, 105, 104);
+}
+
+.scrollable-element {
+  scrollbar-color: red yellow;
+}
+
+.active-nav {
+  color: #00b3ff !important;
+}
+
+.error {
+  /*border-bottom-color: red !important;*/
+  border-color: red !important;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 700px) {
+  .register-edit-container {
+    margin-top: 150px !important;
+    width: 70% !important;
+  }
+
+  .register-form-name,
+  .register-form-sectors,
+  .edit-form-name,
+  .edit-form-sectors{
+    width: 90% !important;
+  }
+
+  .register-form-submit,
+  .edit-form-submit{
+    width:auto !important;
+  }
+
+  .nav {
+    font-size: 20px !important;
+    top: -26px !important;
+  }
+
+  .lds-roller {
+    top: 50% !important;
+  }
+}
+
+@media only screen and (max-height: 766px) {
+
+  .register-edit-container {
+    margin-top: 170px !important;
+
+  }
+
+  .register-form-back {
+    left: 6% !important;
+  }
+
+
+}

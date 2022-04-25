@@ -1,0 +1,35 @@
+<section class="edit-section">
+
+  <form #editForm="ngForm" class="edit-form" action="#" method="post" (submit)="editCurrentUser(editForm)">
+
+    <article class="edit-form-name"  [class.error]="isNameIncorrect || name.touched && name.value.length == 0">
+
+      <label class="form-name-label" for="name">Name</label>
+      <input #name="ngModel" ngModel="{{user?.username}}" class="form-name-input" type="text" name="name" id="name" required>
+
+    </article>
+
+    <article class="edit-form-sectors" [class.error]="isSectorsIncorrect">
+
+      <label class="form-sectors-label" for="sector">Sectors</label>
+
+      <input #sector="ngModel" ngModel="{{user?.underSectorThree}}" class="form-sectors-input" type="text" name="sector" id="sector" disabled required>
+
+    </article>
+
+    <article class="edit-form-aggree">
+
+      <input #agree="ngModel" ngModel="{{user?.agree}}" class="form-aggree-checkbox" type="checkbox" name="agree" id="agree">
+
+      <label class="form-aggree-label" for="agree">Agree to terms</label>
+
+    </article>
+
+      <!-- HERE IS THE SELECTOR WINDOW -->
+      <app-selector (selectedUnderSectorThreeEv)="selectedNewSector($event)" [isSectorsIncorrect]="isSectorsIncorrect"></app-selector>
+
+      <input class="edit-form-submit" type="submit" value="Save">
+
+  </form>
+
+</section>

@@ -1,0 +1,56 @@
+.register-edit-container {
+  box-shadow: -1px -1px 20px 0px;
+  margin-top: 200px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 550px;
+  margin: 50px auto;
+  text-align: center;
+
+  background-color: white;
+  height: 500px;
+}
+
+/* NAVIGATION */
+
+.nav {
+  z-index: 9999;
+  font-size: 30px;
+  position: absolute;
+  top: -36px;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+
+  background-color: #2c78a7;
+}
+
+.nav-register,
+.nav-edit {
+  display: inline;
+}
+
+.nav-register > a ,
+.nav-edit > a {
+  color: rgb(77, 77, 77);
+  text-decoration: none;
+}
+
+.nav-register > a:hover ,
+.nav-edit > a:hover {
+  color: #00d9ff;
+}
+
+.nav-edit {
+  padding-left: 15px;
+  margin-right: 5px;
+}
+.nav-register {
+  padding-left: 5px;
+}

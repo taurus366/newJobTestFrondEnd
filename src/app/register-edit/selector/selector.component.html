@@ -1,0 +1,58 @@
+<article class="register-form-back" *ngIf="isPossibleBack">
+  <a href="#" (click)="back();preventDefault($event)"><i class="fa fa-angle-left"></i> Back</a>
+</article>
+<article class="register-form-selector" [class.error]="isSectorsIncorrect">
+  <!-- HERE IS THE SELECTOR WINDOW -->
+  <ng-container *ngIf="isSectorWindow">
+
+    <ng-container *ngFor="let sector of sectors">
+      <a href="#" (click)="populateUnderSectorOne(sector.id);preventDefault($event)">{{sector.name}}</a>
+    </ng-container>
+
+  </ng-container>
+
+  <ng-container *ngIf="isSectorOneWindow">
+
+    <ng-container *ngTemplateOutlet="this.underSectorOne == undefined ? noItem : item"></ng-container>
+
+    <ng-template #item>
+      <ng-container *ngFor="let sectorOne of underSectorOne">
+        <a href="#" (click)="populateUnderSectorTwo(sectorOne.id);preventDefault($event)">{{sectorOne.name}}</a>
+      </ng-container>
+    </ng-template>
+
+  </ng-container>
+
+  <ng-container *ngIf="isSectorTwoWindow">
+
+    <ng-container *ngTemplateOutlet="this.underSectorTwo == undefined ? noItem : item"></ng-container>
+
+    <ng-template #item>
+
+      <ng-container *ngFor="let sectorTwo of underSectorTwo">
+        <a href="#" (click)="populateUnderSectorThree(sectorTwo.id);preventDefault($event)">{{sectorTwo.name}}</a>
+      </ng-container>
+    </ng-template>
+
+  </ng-container>
+
+  <ng-container *ngIf="isSectorThreeWindow">
+
+    <ng-container *ngTemplateOutlet="this.underSectorThree == undefined? noItem : item"></ng-container>
+
+    <ng-template #item >
+
+      <ng-container *ngFor="let sectorThree of underSectorThree">
+        <a href="#" (click)="preventDefault($event);selectedSector(sectorThree)">{{sectorThree.name}}</a>
+      </ng-container>
+    </ng-template>
+
+  </ng-container>
+
+
+
+  <ng-template #noItem>
+    <p class="no-item">Please get back , we will populate these soon as soon possible</p>
+  </ng-template>
+
+</article>

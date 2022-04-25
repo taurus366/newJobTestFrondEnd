@@ -1,0 +1,117 @@
+/* FORM */
+.edit-form {
+  /* margin-top: 30px; */
+  padding-top: 16px;
+
+}
+
+/* FORM NAME */
+
+.form-name-input {
+  width: 50%;
+  border: none;
+}
+
+.edit-form-name {
+  text-align: left;
+}
+
+.edit-form-name,
+.edit-form-sectors {
+  border-bottom: 2px solid #99e0d6;
+  width: 500px;
+  margin: auto auto 20px auto;
+
+  height: 25px;
+}
+
+/* FORM SECTORS */
+.edit-form-sectors {
+  position: relative;
+  text-align: left;
+}
+
+.form-sectors-table {
+  position: absolute;
+}
+
+.form-sectors-input {
+  width: 50%;
+  border: none;
+}
+
+/* AGGREE */
+
+.edit-form-aggree {
+  text-align: left;
+  margin-left: 20px;
+}
+input[type="checkbox"] {
+  background: #ccab72;
+
+}
+
+.form-aggree-checkbox {
+  accent-color: #99e0d6;
+
+}
+
+/* SELECTOR WINDOW */
+.edit-form-selector {
+  display: flex;
+  /* justify-content: space-around; */
+  justify-self: stretch;
+  flex-direction: column;
+  max-height: 250px;
+  min-height: 250px;
+  border: 1px solid #3ddbe4;
+  width: 91%;
+  margin: 10px auto;
+  overflow: auto;
+  border-radius: 4px;
+}
+
+.edit-form-selector > a {
+  padding-top: 5px;
+  text-decoration: none;
+  color: #40a5aa;
+  font-size: 20px;
+  width: auto;
+  margin: auto;
+}
+.edit-form-selector > a:last-child {
+  padding-bottom: 5px;
+}
+
+.edit-form-selector > a:hover {
+  color: #8be3f0;
+}
+
+.edit-form-back {
+  position: absolute;
+  top: 145px;
+  left: 40px;
+}
+
+.edit-form-back > a {
+  text-decoration: none;
+  color: #ca2f00;
+}
+
+.edit-form-back > a:hover {
+  color: #ff0000;
+}
+
+/* SAVE BTN */
+.edit-form-submit {
+  width: 30%;
+  border-radius: 55px;
+  cursor: pointer;
+  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  padding:15px;
+  font-size: 25px;
+  margin: 30px 30px 10px 30px;
+  color: whitesmoke;
+  background-color:rgba(252, 245, 245, 0);
+}
+
